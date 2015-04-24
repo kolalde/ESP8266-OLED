@@ -76,4 +76,7 @@ uint8 i2c_master_readByte(void);
 void i2c_master_writeByte(uint8 wrdata);
 uint8 i2c_slave_exists( uint8 i2caddr );
 
+bool i2c_master_checkAck(void);
+void i2c_master_send_ack(void);
+void i2c_master_send_nack(void);
 #endif
